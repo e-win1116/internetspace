@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{background-image:url("https://image.tmdb.org/t/p/original/8Qsr8pvDL3s1jNZQ4HK1d1Xlvnh.jpg");
+background-repeat:no-repeat;}
+h1, p{text-align:center;color:#ffd11a;}
+h3 {text-align:left;color:#cc0066;}
+#navbar {background-color: #333; position: fixed; top: 0;
+width: 100%; height: 50px; display: block; transition: top 0.3s;}
+.dropdown {position: relative; display: inline-block;}
+.dropbtn {background-color: #3498DB; color: white; padding: 16px; font-size: 16px; border: none;}
+.dropdown-content {display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; z-index: 1;}
+.dropdown-content a {color: black; padding: 12px 16px; text-decoration: none; display: block;}
+.show {display: block;}
+</style>
+<body>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">奇幻選單</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="https://www.youtube.com/watch?v=MAlcGqYMpiMt">前導預告片</a>
+<a href="https://www.juksy.com/archives/59543">角色全分析</a>
+<a href="https://edsays.catchplay.com/sg/ed-says-article-638-0vunufaa">怪獸圖鑑</a>
+<a href="http://www.eslite.com/Search_BW.aspx?query=%E6%80%AA%E7%8D%B8%E8%88%87%E7%89%A0%E5%80%91%E7%9A%84%E7%94%A2%E5%9C%B0">書籍購買連結</a>
+<a href="https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E8%88%87%E8%91%9B%E6%9E%97%E6%88%B4%E8%8F%AF%E5%BE%B7%E7%9A%84%E7%BD%AA%E8%A1%8C">part2怪獸與葛林戴華德的罪行</a>
+</div>
+<script>
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");}
+</script>
+</body>
+<h1>怪獸與牠們的產地
+<br>Fantastic Beasts and Where to Find Them
+<br>導演： 大衛葉慈 David Yates
+<br>編劇：J.K. Rowling J.K.羅琳</h1>
+<h3><br><br><br><br>最愛的角色</h3>
+<p><SCRIPT LANGUAGE="JavaScript"> 
+function rand()
+{
+var now=new Date()
+var num=(now.getSeconds())%4
+var num=num+1
+alert("你最愛的角色是")
+alert(num)
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<form> 
+<INPUT TYPE="button" 
+VALUE="點此隨機產生" 
+onClick="rand()">
+</FORM></BODY></p>
+<h2>一、Eddie redmayne飾 Newt Scamander 
+<br>(紐特 斯卡曼德)
+<br>二、Katherine Waterston飾Porpentina "Tina" 
+<br>Goldstein（波本蒂娜 "蒂娜＂金坦）
+<br>三、Alison Sudol 飾 Queenie Goldstein
+<br>(奎妮 金坦)
+<br>四、Dan Fogler 飾 Jacob Kowalski
+<br>（雅各 科沃斯基)
+</h2>
+</div>
+<body>
+<style type='text/css'>
+#board { position: absolute; }
+</style>
+<div id=board>
+<div class=ball>
+<img src="https://bradscribe.files.wordpress.com/2018/11/fantastic-beats-the-grooves-of-grindelwald-niffler-flier.gif" width="140"; height="50">
+</div>
+</div>
+<script>
+setInterval(display, 3000);
+function display(){
+var elem = document.getElementById("board");
+var x = Math.floor((Math.random() * 600) + 1);
+var y = Math.floor((Math.random() * 600) + 1);
+elem.style.left = x + "px";
+elem.style.top = y + "px";
+}
+</script>
+</body>
+</HTML>
